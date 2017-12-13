@@ -1,0 +1,639 @@
+//META{"name":"FLCL_Theme","description":"It's an FLCL theme","author":"Isoitiro","version":"1.0"}*//{}
+
+
+
+/*
+
+
+    Variables
+
+
+*/
+:root {
+    --text-color: rgba(255, 255, 255, 1);
+    --text-color-50: rgba(255, 255, 255, 0.5);
+    --text-color-25: rgba(255, 255, 255, 0.25);
+    
+    --link-color: rgba(50, 160, 255, 1);
+    
+    --border-color: rgba(41, 43, 47, 1);
+    
+    --divider-color-1: rgba(255, 255, 255, 0.3);
+    --divider-color-2: rgba(255, 255, 255, 0.75);
+    
+    --bg-color-1: rgba(50, 58, 70, 1); /* Matches grey of image. */
+    --bg-color-2: rgba(15, 15, 15, 1); /* Almost black. */
+    --bg-color-3: rgba(70, 70, 70, 1); /* Grey */
+    --bg-color-4: rgba(181, 189, 202, 1); /* Light grey derived from bg-color-1. */
+    --bg-color-5: rgba(25, 29, 35, 1); /* Dark grey derived from bg-color-1 + 50% black. */
+    
+    --vespa-yellow: rgba(243, 200, 82, 1);
+    --vespa-yellow-50: rgba(243, 200, 82, 0.5);
+    --vespa-yellow-25: rgba(243, 200, 82, 0.25);
+    
+    --atomsk-red: rgba(179, 53, 32, 1);
+    --atomsk-red-50: rgba(179, 53, 32, 0.5);
+    
+    --iron-red: rgba(231, 74, 51, 1);
+    --iron-red-50: rgba(231, 74, 51, 0.5);
+}
+
+
+
+/*
+
+
+    Overall
+
+
+*/
+/* Set background image. */
+.app {
+    background-image: url(https://i.imgur.com/4gMEssi.png);
+    /*background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.imgur.com/Sv91iFg.png);*/
+    /*background-image: url(https://brand.cfaes.ohio-state.edu/sites/ctbrand/files/site-library/site-documents/art/backgrounds/osu/jaquard_24x24_red.png);*/
+}
+
+/* Make background transparent */
+.theme-dark .layer,
+.theme-dark .layers,
+.container-2OU7Cz
+{
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background: transparent;
+}
+
+
+
+/*
+
+
+    Server List
+
+
+*/
+/* Make background transparent */
+.guilds-wrapper {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background: transparent;
+}
+
+.guilds-wrapper .guilds {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.guilds-wrapper .guilds .guild.unread:before {
+    background: var(--atomsk-red);
+}
+
+.guilds-wrapper .guilds .guild.selected:before {
+    background: var(--vespa-yellow);
+}
+
+
+
+/*
+
+
+    Friends list
+
+
+*/
+/* Make background transparent */
+.theme-dark #friends,
+.theme-dark .friends-table
+{
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background: transparent;
+}
+
+/* Header */
+.private-channels .search-bar, 
+.theme-dark .headerBar-cxbhPD {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+/* Container for all friends. */
+.scroller-fzNley {
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.75) 95%, rgba(255, 255, 255, 0));
+}
+
+/* Channel */
+.private-channels .channel {
+    overflow: visible;
+}
+
+/* Active friend conversation. */
+.private-channels .channel.selected a {
+    background: -webkit-linear-gradient(left top, var(--atomsk-red-50), var(--iron-red-50), var(--vespa-yellow-50));
+}
+
+/* Hovering over friend conversation. */
+.private-channels .channel:hover a {
+    background: -webkit-linear-gradient(left top, var(--atomsk-red), var(--iron-red), var(--vespa-yellow));
+}
+
+
+
+/*
+
+
+    Channel List
+
+
+*/
+/* Make background transparent */
+.container-RYiLUQ,
+.channels-3g2vYe
+{
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background: transparent;
+}
+
+/* Header */
+.container-3NvGrL {
+    background: rgba(0, 0, 0, 0.75);
+    border: 0px;
+}
+
+.header-1tSljs:hover {
+    background: -webkit-linear-gradient(left top, var(--atomsk-red), var(--iron-red), var(--vespa-yellow));
+}
+
+/* Container for all the channels. */
+.scroller-NXV0-d {
+    /*background: rgba(0, 0, 0, 0.25);*/
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.75) 95%, rgba(255, 255, 255, 0));
+}
+
+/* Current voice channel box. */
+.container-3lnMWU {
+    /*background: rgba(0, 0, 0, 0.25);*/
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.75) 95%, rgba(255, 255, 255, 0));
+    border: 0px;
+}
+
+/* Settings box. */
+.container-iksrDt {
+    /*background: rgba(0, 0, 0, 0.25);*/
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.75) 95%, rgba(255, 255, 255, 0));
+    margin: 0px;
+}
+
+/* Section headers. */
+.nameDefault-Lnjrwm {
+    color: rgba(180, 180, 180, 1);
+}
+
+/*
+    Defaults
+*/
+/* Content container. */
+.contentDefaultText-2elG3R,
+.contentDefaultVoice-311dxZ {
+    
+}
+
+/* # and Speaker icon. */
+.colorDefaultText-2v6rRX,
+.colorDefaultVoice-1x4dEl {
+    color: var(--text-color);
+}
+
+/* Channel name. */
+.nameDefaultText-QoumjC,
+.nameDefaultVoice-1swZoh {
+    color: var(--text-color-50);
+}
+
+/*
+    Hovering
+*/
+/* Content container. */
+.contentHoveredText-2HYGIY {
+    background: -webkit-linear-gradient(left top, var(--atomsk-red), var(--iron-red), var(--vespa-yellow));
+}
+
+.contentHoveredVoice-3qGNKh {
+    
+}
+
+/* # and Speaker icon. */
+.colorHoveredText-1CsxK1,
+.colorHoveredVoice-1P3kui {
+    color: white;
+}
+
+/* Channel name. */
+.nameHoveredText-2FFqiz,
+.nameHoveredVoice-TIoHRJ {
+    color: white;
+}
+
+/*
+    Selected
+*/
+/* Content container. */
+.contentSelectedText-3j5CXt {
+    background: -webkit-linear-gradient(left top, var(--atomsk-red-50), var(--iron-red-50), var(--vespa-yellow-50));
+}
+.contentSelectedVoice-gTtYM9 {
+    
+}
+
+/* # and Speaker icon. */
+.colorSelectedText-3YhFC6,
+.colorSelectedVoice-ieXC3Z {
+    color: white;
+}
+
+/* Channel name. */
+.nameSelectedText-32NDX5,
+.nameSelectedVoice-XpjYTw {
+    color: white;
+}
+
+/*
+    Unread
+*/
+/* Content container. */
+.contentUnreadText-3oxASB,
+.contentUnreadVoice-1vHNNW {
+    
+}
+
+/* # and Speaker icon. */
+.colorUnreadText-1KwCnP {
+    color: var(--text-color);
+}
+
+.colorUnreadVoice-1Ztv9I {
+    color: var(--atomsk-red);
+}
+
+/* Channel name. */
+.nameUnreadText-1pxldj,
+.nameUnreadVoice-QK4gxH {
+    color: var(--atomsk-red);
+}
+
+/* Special rules for hovering over a channel with unread text. */
+.contentHoveredText-2HYGIY .nameUnreadText-1pxldj {
+    color: rgba(130, 0, 0, 1);
+}
+
+/* Little half circle when there is unread text in a channel. */
+.unread-23Kvxk {
+    background: var(--atomsk-red);
+}
+
+/*
+    Locked
+*/
+/* Content container. */
+.contentLockedText-1NPV7g,
+.contentLockedVoice-2lGH0M {
+    
+}
+
+/* # and Speaker icon. */
+.colorLockedText-2onHWv,
+.colorLockedVoice-2VCSgk {
+    
+}
+
+/* Channel name. */
+.nameLockedText-2fGz07,
+.nameLockedVoice-wNOMNa {
+    
+}
+
+/*
+    Muted
+*/
+/* Content container. */
+.contentMutedText-Lcl-Wj,
+.contentMutedVoice-1AvYom {
+    
+}
+
+/* Channel name. */
+.nameMutedText-1YDcP-,
+.nameMutedVoice-26k4cP {
+    color: var(--text-color-25);
+}
+
+
+
+/*
+
+
+    Chat Area
+
+
+*/
+/* Make background transparent */
+.theme-dark .chat,
+.theme-dark .chat>.content,
+.theme-dark .messages-wrapper,
+.theme-dark .chat form
+{
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background: transparent;
+}
+
+/* Header. */
+.theme-dark .title-qAcLxz {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+/* Sliding part of the scrollbar. */
+.scroller-wrap .scroller::-webkit-scrollbar-thumb {
+    border: 2px solid transparent !important;
+    background: var(--bg-color-2) !important;
+}
+
+/* Scrollbar track. */
+.scroller-wrap .scroller::-webkit-scrollbar-track-piece {
+    border: 3px solid transparent !important;
+    background: rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Individual message containers. */
+.theme-dark .message-group:not(.has-divider) {
+    border-bottom-color: var(--divider-color-1);
+    border-bottom-width: 1px;
+}
+
+/* Container with the editing interface inside. */
+.message-group .edit-message .edit-container-outer {
+    margin-left: 14px;
+}
+
+/* Avatar is duplicated in the editing interface and shows a duplicate. */
+.message-group .edit-message .edit-container-outer .avatar-large {
+    visibility: hidden;
+}
+
+/* Dividers. not(.red)=Date .divider-red>=New Messages */
+.theme-dark .messages-wrapper .messages .divider:before {
+    background: var(--divider-color-1);
+}
+
+.theme-dark .messages-wrapper .messages .divider:not(.red) div,
+.theme-dark .messages-wrapper .messages .divider.divider-red>div {
+    background: transparent;
+}
+
+.theme-dark .messages-wrapper .messages .divider:not(.red) span,
+.theme-dark .messages-wrapper .messages .divider.divider-red>span {
+    background: var(--bg-color-4);
+    color: var(--iron-red);
+    font-weight: bold;
+    line-height: 17px;
+}
+
+/* ... is typing */
+.theme-dark .chat form .typing {
+    background: var(--bg-color-1);
+    padding-left: 5px;
+}
+
+/*
+    Chat text
+*/
+/* A chat comment. */
+.message-group .comment {
+    /*background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.1) 50%);*/
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 0px;
+}
+
+/* Blocked messages */
+.message-group-blocked {
+    display: none !important;
+}
+
+/* Message timestamp. */
+.message-group h2 .timestamp {
+    color: var(--text-color-50) !important;
+}
+
+/* Standard chat message text. */
+.theme-dark .message-group .comment .markup {
+    color: var(--text-color);
+}
+
+/* Links. */
+.theme-dark .message-group a {
+    color: var(--link-color);
+}
+
+/* @ links. */
+.theme-dark .message-group .comment .markup .mention {
+    background: transparent;
+}
+
+/* Text when mentioned. */
+.theme-dark .message-group .mentioned .message-text {
+    background: var(--vespa-yellow-25);
+}
+
+/* Emoji */
+img.emoji, img.emoji.jumboable {
+    transition: height 0.15s ease 0s, width 0.15s ease 0s, border 0s ease 0s;
+}
+
+img.emoji:hover, img.emoji.jumboable:hover {
+    height: 64px;
+    width: 64px;
+    border: 1px dashed var(--atomsk-red);
+    transition: height 0.15s ease 0.25s, width 0.15s ease 0.25s, border 0s ease 0.25s;
+}
+
+/* Emoji menu */
+.bda-dark .emoji-picker, 
+.bda-dark .emoji-picker .header .search-bar, 
+.bda-dark .emoji-picker .category {
+    background-color: var(--bg-color-1);
+}
+
+div .emoji-picker > div > .scroller-fzNley {
+    background: transparent;
+}
+
+/* Sliding part of the scrollbar. */
+.bda-dark .emoji-picker .scroller::-webkit-scrollbar-thumb {
+    visibility: visible;
+    border: 2px solid transparent !important;
+    background-color: var(--bg-color-2) !important;
+}
+
+/* Scrollbar track. */
+.bda-dark .emoji-picker .scroller::-webkit-scrollbar,
+.bda-dark .emoji-picker .scroller::-webkit-scrollbar-track {
+    background-color: transparent !important;
+    border: 3px solid transparent !important;
+}
+
+.bda-dark .emoji-picker .scroller::-webkit-scrollbar-track-piece {
+    visibility: visible;
+    border: 3px solid transparent !important;
+    background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Emoji fix (Fixes emoji expanding in the menu) */
+.emoji-picker .scroller .emoji-item.selected {
+    background-size: contain !important;
+    background-position: 50% !important;
+    background-repeat: no-repeat !important;
+}
+
+.bda-dark .emoji-picker .diversity-selector .popout {
+    background: var(--bg-color-1);
+}
+
+.bda-dark .emoji-picker .dimmer.visible {
+    background-color: transparent;
+}
+
+/* Line under emoji category */
+.emoji-picker .categories .item.selected {
+    border-bottom-color: var(--atomsk-red);
+}
+
+/*
+    Autocomplete
+*/
+.autocomplete-1TnWNR, 
+.autocomplete-1LLKUa, 
+.autocompleteInner-N7OQf1 {
+    background-color: var(--bg-color-2);
+}
+
+/*
+    Embeds
+*/
+/* Embed container. */
+.theme-dark .message-group .embed {
+    background: var(--bg-color-2);
+    border-radius: 0px 5px 5px 0px;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+/* White line on the left side of the embed. */
+.theme-dark .message-group .embed-wrapper .embed-color-pill {
+    background: var(--atomsk-red);
+}
+
+/*
+    Invite links
+*/
+.theme-dark .invite-button {
+    background-color: var(--bg-color-2);
+}
+
+/* Circle */
+.invite-button-icon.accepted {
+    background-color: var(--vespa-yellow);
+    border-color: var(--vespa-yellow);
+}
+
+/* Check mark */
+.invite-button-icon.accepted:before {
+    border-color: var(--bg-color-2);
+}
+
+/* Circle */
+.invite-button-icon.join {
+    background-color: var(--atomsk-red);
+    border-color: var(--atomsk-red);
+}
+
+/* Check mark */
+.invite-button-icon.join:before {
+    border-color: var(--bg-color-2);
+}
+
+/*
+
+
+    User List
+
+
+*/
+/* Content container. */
+.theme-dark .channel-members {
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.75) 5%);
+}
+
+.theme-dark .channel-members h2 {
+    padding: 0px 20px; 
+}
+
+.theme-dark .channel-members .member {
+    padding: 4px 20px;
+}
+
+.theme-dark .channel-members .member:hover {
+    /*background: -webkit-linear-gradient(left, var(--vespa-yellow-50), var(--iron-red-50) 50%, var(--atomsk-red-50));*/
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.75) 30%);
+    border-radius: 5px;
+}
+
+
+
+/*
+
+
+    Avatars
+
+
+*/
+/* Avatars in friend list and channel members. */
+.private-channels .channel .avatar-small,
+#friends .friends-table .friends-row .friends-column-name .avatar-small,
+#friends .friends-table .friends-row .friends-column-guilds .avatar-small,
+#friends .friends-table .friends-row .friends-column-guilds .more-mutual-guilds-btn,
+.channel-members .avatar-small {
+    background-repeat: no-repeat;
+    border: 1px solid var(--border-color);
+    border-radius: 20%;
+    transition: border-radius 0.15s, width 0.15s, height 0.15s, background-size 0.15s;
+}
+
+.private-channels .channel .avatar-small:hover,
+#friends .friends-table .friends-row .friends-column-name .avatar-small:hover,
+#friends .friends-table .friends-row .friends-column-guilds .avatar-small:hover,
+/*#friends .friends-table .friends-row .friends-column-guilds .more-mutual-guilds-btn:hover,*/
+.channel-members .avatar-small:hover {
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+    height: 60px;
+    width: 60px;
+    border-radius: 0%;
+}
+
+/* Avatars in chat. */
+.message-group .avatar-large {
+    background-repeat: no-repeat;
+    border: 3px solid var(--border-color);
+    border-radius: 20%;
+    transition: border-radius 0.15s, width 0.15s, height 0.15s, background-size 0.15s;
+}
+
+.message-group .avatar-large:hover {
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    height: 100px;
+    width: 100px;
+    border-radius: 0%;
+    opacity: 1;
+}
